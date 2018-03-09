@@ -1,0 +1,15 @@
+<h1> Journal details </h1>
+<a [routerLink]="['']"> Back to list </a>
+
+<div *ngIf="journal">
+  <div class="journal-thumbnail">
+    <img height="300" [src]="journal.image" />
+  </div>
+
+  <div class="journal-info">
+    <h2> {{ journal.name }}&nbsp;</h2>
+    <h3> {{ journal.date }} </h3>
+    <h3> {{ journal.content }} </h3>
+
+  </div>
+</div>

@@ -1,5 +1,5 @@
 <div *ngFor="let journal of journals">
   <p>Title: {{ journal.title }} </p>
   <p>Date: {{ journal.date }} </p>
-
+  <a [routerLink]="['jounal', journal._id]"> View Details </a>
 </div>
